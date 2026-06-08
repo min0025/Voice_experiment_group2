@@ -19,7 +19,7 @@ const speaker_gender_map = [
 // =========================
 // 本試行76〜100番音声にファイルパスと話者メタデータを付与します。
 const all_stimuli = Array.from({ length: 25 }, (_, i) => {
-  const speakerNumber = i + 1;
+  const speakerNumber = i + 26;
   const num = String(speakerNumber).padStart(3, "0");
   return {
     id: speakerNumber - 1,
